@@ -31,7 +31,7 @@ namespace Lab8
             }
             catch (FormatException)
             {
-                Console.WriteLine("Not a valid index. Must be an integer 1-20. (FormatException)");
+                Console.WriteLine("Not a valid index. Must be an integer 1-20.");
                 index = GetValidIndex();
             }
             return index;
@@ -48,7 +48,7 @@ namespace Lab8
             }
             catch (IndexOutOfRangeException)
             {
-                Console.WriteLine("Not a valid index. Must be an integer 1-20. (IndexOutOfRangeException)");
+                Console.WriteLine("Not a valid index. Must be an integer 1-20.");
                 classmate = GetValidClassmate(classmates);
             }
             Console.Write($"Student {index + 1} is {classmate[FIRSTNAME]} {classmate[LASTNAME]}. ");
